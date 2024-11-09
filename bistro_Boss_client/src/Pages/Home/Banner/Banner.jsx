@@ -6,6 +6,7 @@ import caruImg3 from '../../../assets/home/03.png';
 import caruImg4 from '../../../assets/home/04.jpg';
 import caruImg5 from '../../../assets/home/05.png';
 import caruImg6 from '../../../assets/home/06.png';
+import caruImg7 from '../../../assets/home/banner.jpg';
 const Banner = () => {
     return (
         <Carousel>
