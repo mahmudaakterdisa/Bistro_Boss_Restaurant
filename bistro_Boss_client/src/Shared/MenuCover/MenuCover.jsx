@@ -1,5 +1,4 @@
 import { Parallax } from 'react-parallax';
-import ServiceItems from '../../Pages/ChefService/ServiceItems';
 import './MenuCover.css'
 
 const MenuCover = ({ img, title, subTitle }) => {
@@ -7,7 +6,7 @@ const MenuCover = ({ img, title, subTitle }) => {
         <Parallax
             blur={{ min: -50, max: 50 }}
             bgImage={img}
-            bgImageAlt="the dog"
+            bgImageAlt="the menu"
             strength={-200}
         >
             <div

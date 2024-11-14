@@ -1,6 +1,7 @@
 import { Helmet } from 'react-helmet-async';
 import MenuCover from '../../../Shared/MenuCover/MenuCover';
 import PopularMenu from '../../PopularMenu/PopularMenu';
+import MenuCategory from './MenuCategory/MenuCategory';
 const Menu = () => {
     return (
         <div>
@@ -12,6 +13,7 @@ const Menu = () => {
                 title={'our menu'}
                 subTitle={'would you like to try a dish?'}
             ></MenuCover>
+            <MenuCategory></MenuCategory>
             <PopularMenu></PopularMenu>
             <PopularMenu></PopularMenu>
             <PopularMenu></PopularMenu>
