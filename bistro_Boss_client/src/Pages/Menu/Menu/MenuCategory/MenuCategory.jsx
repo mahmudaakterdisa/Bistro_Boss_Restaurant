@@ -1,25 +1,20 @@
-import React, { useEffect, useState } from 'react';
-import SectionTitle from '../../../../Components/SectionTitle/SectionTitle'
 import MenuItem from '../../../../Shared/MenuItem/MenuItem';
-import useMenu from '../../../../Hooks/useMenu';
 
-const MenuCategory = () => {
-    const [menu] = useMenu();
-    const menuCategory = menu.filter(item => item.category === 'salad');
+const MenuCategory = ({ categoryItem }) => {
     return (
         <div className='my-20'>
-            <SectionTitle
-                heading={"today's offer"}
-                subHeading={"don't miss"}
-            ></SectionTitle>
+
             <div className='grid md:grid-cols-2 gap-10'>
                 {
-                    menuCategory.map(item => <MenuItem
+                    categoryItem.map(item => <MenuItem
                         key={item._id}
                         item={item}
                     ></MenuItem>)
                 }
 
+            </div>
+            <div className='flex justify-center mt-6'>
+                <button class="btn btn-outline border-0 border-b-4 mt-5 text-xl">Order Your Favorite Food</button>
             </div>
 
 
