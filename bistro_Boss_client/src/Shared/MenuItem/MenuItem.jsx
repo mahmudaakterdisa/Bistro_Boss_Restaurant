@@ -2,6 +2,7 @@ import React from 'react';
 
 const MenuItem = ({ item }) => {
     console.log(item)
+    console.log(item)
     const { name, image, price, recipe } = item
 
     return (
